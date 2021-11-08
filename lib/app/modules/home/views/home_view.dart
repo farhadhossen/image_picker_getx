@@ -20,16 +20,16 @@ class HomeView extends GetView<HomeController> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
 
-              Obx(()=>controller.selectedImagePath.value==''?
+              Obx(()=>controller.compressImagePath.value==''?
                   Text('Select immage from camera/gallery',
                   style: TextStyle(fontSize: 20),
                   )
-                  : Image.file(File(controller.selectedImagePath.value))
+                  : Image.file(File(controller.compressImagePath.value))
               ),
 
               SizedBox(height: 10,),
-              Obx(()=>Text(controller.selectedImageSize.value==''?'':
-              controller.selectedImageSize.value,
+              Obx(()=>Text(controller.compressImagePath.value==''?'':
+              controller.compressImageSIze.value,
               style: TextStyle(fontSize: 20),
               ),
               ),
