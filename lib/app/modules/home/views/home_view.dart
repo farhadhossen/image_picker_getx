@@ -6,6 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import '../controllers/home_controller.dart';
 import 'dart:io';
 
+
 class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
