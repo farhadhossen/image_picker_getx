@@ -2,7 +2,8 @@
     package="com.farhad.image_picker_getx">
    <application
         android:label="image_picker_getx"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+       android:requestLegacyExternalStorage="true">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
